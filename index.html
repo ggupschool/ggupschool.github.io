@@ -276,7 +276,76 @@
             <!-- /.row -->
         </div>
         <!-- /.container -->
-    </footer>
+    </footer><!-- Container (Contact Section) -->
+<div class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We want to contact you guys!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Contact? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Nonsan, South Korea</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: </p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email:</p>
+      <p><span class="glyphicon glyphicon-camera"></span><a href=""></a></p>
+      <p><span class="glyphicon glyphicon-thumbs-up"></span><a href=""></a></p>
+
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+         <form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>   
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>This Webpage Made By <a href="http://ggupschool.github.io/" data-toggle="tooltip" title="Visit P-School">쁘리즈냐</a></p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+})
+</script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

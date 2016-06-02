@@ -8,8 +8,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+     body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+          }
+     h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+            }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.9;
+  }
+  .person:hover {
+      border-color: #e6e6e6;
+  }
+   .carousel-inner img {
+      width: 80%;/* Set width to 100% */
+      
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 300px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  div.bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  div.bg-1 h3 {color: #fff;}
+  div.bg-1 p {font-style: italic;}
+  div.bg-2 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }  
+  
+  .nav-tabs li a {
+      color: #777;
+  }
+  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+   footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }
+  .form-control {
+      border-radius: 0;
+  }
+   textarea {
+      resize: none;
+  } 
+</style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <title>P school</title>
+    <title>P-school</title>
 
 
     <!-- Custom CSS -->
@@ -21,26 +159,28 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-<style>
-    .carousel-caption h3 {
-      color: #fff !important;
-  }
-  @media (max-width: 300px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
-</style>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">P-school</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">P-School</a></li>
+        <li><a href="#Biography">Program</a></li>
+        <li><a href="#Family">FAMILY</a></li>
+        <li><a href="#Travel">Gallery</a></li>
+        <li><a href="#Hobby">Q&A</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-</head>
-<div id="nav_menu">
-<ul style="list-style-type:none">
-<li style="display:inline"> <a href="#">P school</a></li>
-<li style="display:inline"><a href="#">program</a></li>
-<li style="display:inline"><a href="#">gallery</a></li>
-<li style="display:inline"><a href="#">Q&A</a></li>
-</ul>
-</div>
     <!-- Navigation -->
     
 
@@ -56,42 +196,32 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="ryujayoung.github.com/it's me.JPG" alt="it's me" width="1200" height="700">
+        <img src="ggupschool.github.io/Temple001.jpg" alt="Temple" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>IT'S ME</h3>
-          <p>I take this picture in the university roof.</p>
         </div>      
       </div>
 
       <div class="item">
-        <img src="ryujayoung.github.com/busan.JPG" alt="busan" width="1200" height="700">
+        <img src="ggupschool.github.io/mountain.jpg" alt="mountain" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Busan</h3>
-          <p>Thank you, Busan - A night I won't forget.</p>
         </div>      
       </div>
     
       <div class="item">
-        <img src="ryujayoung.github.com/pizza.JPG" alt="pizza" width="1200" height="700">
+        <img src="ggupschool.github.io/sky.jpg" alt="sky" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Foods</h3>
-          <p>I love eating delicious food. Pizza is one of them.</p>
         </div>      
       </div>
 
       <div class="item">
-        <img src="ryujayoung.github.com/soccer.JPG" alt="soccer" width="1200" height="700">
+        <img src="ggupschool.github.io/tea.jpg" alt="tea" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Soccer</h3>
-          <p>I love watching a soccer game. I'm member of soccer team in GeumGang University.</p>
         </div>      
       </div>
 
       <div class="item">
-        <img src="ryujayoung.github.com/boryeong.JPG" alt="Boryeong" width="1200" height="700">
+        <img src="ggupschool.github.io/buddist.jpg" alt="buddist" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Boryeong</h3>
-          <p>Thank you, Boryeong - A nice view I won't forger.</p>
         </div>      
       </div>
     </div>
@@ -109,10 +239,7 @@
 
     <!-- Full Width Image Header with Logo -->
     <!-- Image backgrounds are set within the full-width-pics.css file. -->
-    <header class="image-bg-fluid-height">
-        <img class="img-responsive img-center" src="Temple001.jpg" width=1248 height=520 alt="">
-    </header>
-
+  
     <!-- Content Section -->
     <section>
         <div class="container">

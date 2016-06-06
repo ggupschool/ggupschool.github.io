@@ -227,20 +227,6 @@
   </div>
 </div>
 </body>
-<body>
-<div class="notes">
-    <div class="container">
-    <div class="row">
-        <div class="col-md-9 col-sm-10 col-12">
-        <p>금강대나 국제 선원 가는 페이지로 그리고 금강대나 국제선원에 관한 설명 간단히 하기</p> 
-      </div>
-        <div class="col-md-3 col-sm-2 col-xs-12 text-center">
-        <button>Click Me</button>
-      </div>
-      </div>
-  </div>
-  </div>
-</body>
 <div class="testimonials" id="testimonials">
   <div class="container">
       <div class="row">
@@ -263,13 +249,27 @@
                     </blockquote>
                     <blockquote>
                       <p>스님 추천말  consectetur adipiscing elit. Vivamus bibendum augue sodales tellus molestie eleifend.</p>
-                        <p class="name">도웜스님</p>
+                        <p class="name">도원스님</p>
                     </blockquote>
                 </div>
             </div>        
         </div>
     </div>
 </div>
+<body>
+<div class="notes">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-9 col-sm-10 col-12">
+        <p>금강대나 국제 선원 가는 페이지로 그리고 금강대나 국제선원에 관한 설명 간단히 하기</p> 
+      </div>
+        <div class="col-md-3 col-sm-2 col-xs-12 text-center">
+        <button>Click Me</button>
+      </div>
+      </div>
+  </div>
+  </div>
+</body>
 <div class="subscribe-social"> 
   <div class="container">
       <div class="row">
@@ -342,8 +342,8 @@ $(function(){
     var windowH = $(window).height();
     var bannerH = $('#banner').height();
     if(windowH > bannerH) {                            
-        $('#banner').css({'height':($(window).height() - 200)+'px'});
-    $('#bannertext').css({'height':($(window).height() - 200)+'px'});
+        $('#banner').css({'height':($(window).height() - 150)+'px'});
+    $('#bannertext').css({'height':($(window).height() - 150)+'px'});
     }                                                                               
     $(window).resize(function(){
         var windowH = $(window).height();
@@ -352,12 +352,12 @@ $(function(){
         var newH = bannerH + differenceH;
         var truecontentH = $('#bannertext').height();
         if(windowH < truecontentH) {
-            $('#banner').css({'height': (newH - 200)+'px'});
-      $('#bannertext').css({'height': (newH - 200)+'px'});
+            $('#banner').css({'height': (newH - 150)+'px'});
+      $('#bannertext').css({'height': (newH - 150)+'px'});
         }
     if(windowH > truecontentH) {
-            $('#banner').css({'height': (newH - 200)+'px'});
-      $('#bannertext').css({'height': (newH - 200)+'px'});
+            $('#banner').css({'height': (newH - 150)+'px'});
+      $('#bannertext').css({'height': (newH - 150)+'px'});
         }
 
     })          
